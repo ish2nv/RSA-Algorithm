@@ -5,7 +5,7 @@ The RSA algorithm is used by modern devices to encrypt/decrypt messages. It uses
 
 Their are four key algorithms that are needed to build model with RSA security:
 
-* Key generator algorithm - this will generate the public and private keys for both users who want to interact securely
+* Key generator algorithm - this will generate 256 bit public and private keys for both users who want to interact securely. It is important to generate 256 bit or higher keys, otherwise interceptors/hackers will find it easy to crack the message.
 * RSA encryption algorithm - the message is encrypted by the sender using the public key
 * RSA decryption algorithm - the message is decrypted by the receiver using the private key
 * RSA modular exponentiation algorithm - this algorithm will be used by the two algorithms above, in order to encrypt or decrypt the message
@@ -31,7 +31,7 @@ Their are four key algorithms that are needed to build model with RSA security:
 
 
 # Activity flow of the implementation
-
+The diagram below explains the programs flow of activity in a simple manner.
     <p align="center">
   <img src="https://github.com/ish2nv/RSA-Algorithm/blob/master/rsaimg_med.png" alt="Activity diagram">
 </p>
