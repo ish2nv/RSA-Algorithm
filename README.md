@@ -1,5 +1,5 @@
 # Introduction
-The RSA algorithm is used by modern devices to encrypt/decrypt messages. It uses asymmetric cryptography, meaning that it use two different keys: public and private key. The public key is known to everyone in the party, whereas the private key is only known to either the sender or the receiver of the message. My implementation includes this along with a scenario, where Alice sends a message to Bob and is intercepted by a middle man, CHARLIE.
+The RSA algorithm is used by modern devices to encrypt/decrypt messages. It uses asymmetric cryptography, meaning that it use two different keys: public and private key. The public key is known to everyone in the party, whereas the private key is only known to either the sender or the receiver of the message. My implementation includes this along with a scenario, where Alice sends a message to Bob and is intercepted by a middle man, CHARLIE. I also investigate a problem with the algorithm. Further detail of this can be seen below
 
 # Key steps
 
@@ -18,6 +18,12 @@ Their are four key algorithms that are needed to build model with RSA security:
     - After Bob has decrypted C', he encrypts and sends the tampered message to Alice as he does not understand it and wants it to be sent         again
     - Charlie intercepts the decrypted C' and simply divides it by r in the final stage. This gives Charlie the message without having to         know Bob's private key. 
     - Charlie has successfully managed to get the message through this cipher attack example
+    
+    
+    <p align="center">
+  <img src="https://github.com/ish2nv/RSA-Algorithm/blob/master/rsainterceptimg.jpg" alt="RSA intercept image">
+</p>
+    
 
 * Interpreting problematic state
     - suppose we get the user to choose two small prime numbers p and q. from the result in the program, you will see that the encrypted           text and decrypted text are both wrong. This is because n is too small and needs to be much bigger in order for encryption and               decryption to work properly
