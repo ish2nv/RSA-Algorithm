@@ -12,11 +12,6 @@ Their are four key algorithms that are needed to build model with RSA security:
 
 # Implementation overview
 
-•	suppose we get the user to choose two small prime numbers p and q. from the result in the program, you will see that the encrypted text and decrypted text are both wrong. This is because n is too small and needs to be much bigger in order for encryption and decryption to work properly.
-•	Using small prime numbers is also a security concern as interceptors can easily factor n to get the receivers private key.
-
-
-
 * Interpreting user interface
     - Charlie intercepts and receives cipher from Alice who intends to send to Bob. Let’s call this cipher C
     - Charlie swaps C with C' = C * r^e mod N and sends this to Bob to decrypt. r is a random number, e and n is the public key of Bob 
