@@ -30,3 +30,12 @@ Their are four key algorithms that are needed to build model with RSA security:
     -	Using small prime numbers is also a security concern as interceptors can easily factor n to get the receivers private key.
 
 
+# Activity flow of the implementation
+
+    <p align="center">
+  <img src="https://github.com/ish2nv/RSA-Algorithm/blob/master/rsaimg_med.png" alt="Activity diagram">
+</p>
+    
+
+
+
